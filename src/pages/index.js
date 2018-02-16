@@ -17,8 +17,12 @@ class Frontpage extends Component {
                 <Helmet>
                     <title>Find your OP Branch</title>
                 </Helmet>
-                <FindNearestBranch branchOffices={branchOffices}/>
-                <SearchBranches branchOffices={branchOffices}/>
+                <div style={{marginBottom: "1em", width: "25vw"}}>
+                    <FindNearestBranch branchOffices={branchOffices}/>
+                </div>
+                <div style={{marginBottom: "1em"}}>
+                    <SearchBranches branchOffices={branchOffices}/>
+                </div>
             </div>
         );
     }

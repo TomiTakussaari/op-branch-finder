@@ -3,7 +3,7 @@ import "bootstrap/dist/css/bootstrap.css";
 import "../findMyOp.css";
 import Link from "gatsby-link";
 
-const pages = [{path: "/", name: "Search"}, {path: "/branches", name: "All branches"}];
+const pages = [{path: "/", name: "Search"}, {path: "/branches", name: "Branches in map"}];
 
 const Navi = () => {
     return <header className="container">
@@ -31,6 +31,12 @@ class Template extends Component {
             <div className="container-fluid">
                 <Navi/>
                 {children()}
+                <footer>
+                    <p>
+                        Disclaimer: This site is not affiliated with OP group in anyway.
+                        But it does use OP data from <a href="https://op-developer.fi">OP Developer</a> sandbox.
+                    </p>
+                </footer>
             </div>
         )
     }
