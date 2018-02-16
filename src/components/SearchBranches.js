@@ -1,6 +1,5 @@
 import React, {Component} from "react";
 import Link from "gatsby-link";
-import Helmet from "react-helmet";
 
 const findMatchingOffices = (branchOffices, searchTerm) => {
     const sortByMatches = (branchWithMatchesA, branchWithMatchesB) => branchWithMatchesA.matches - branchWithMatchesB.matches;
@@ -79,12 +78,6 @@ class Search extends Component {
     render() {
         return (
             <div>
-                <header>
-                    <h1 className="text-center">Find your OP branch</h1>
-                </header>
-                <Helmet>
-                    <title>Find your OP Branch</title>
-                </Helmet>
                 <SearchBox searchTerm={this.state.searchTerm} updateSearchTerm={this.updateSearchTerm}/>
                 <SearchResults searchTerm={this.state.searchTerm} results={this.findOffices()}/>
             </div>
