@@ -31,10 +31,9 @@ class Template extends Component {
             <div className="container-fluid">
                 <Navi/>
                 {children()}
-                <footer>
+                <footer style={{marginTop: "3em"}}>
                     <p>
-                        Disclaimer: This site is not affiliated with OP group in anyway.
-                        But it does use OP data from <a href="https://op-developer.fi">OP Developer</a> sandbox.
+                        Disclaimer: This site uses OP data from <a href="https://op-developer.fi">OP Developer</a> sandbox.
                     </p>
                 </footer>
             </div>
