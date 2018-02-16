@@ -1,0 +1,19 @@
+{
+  "scripts": {
+    "build": "gatsby build",
+    "deploy": "gatsby build",
+    "develop": "gatsby develop",
+    "serve": "gatsby serve",
+    "test": "echo \"Error: no tests specified\" && exit 1"
+  },
+  "private": true,
+  "dependencies": {
+    "@op/api-sdk": "1.1.0",
+    "bootstrap": "^4.0.0",
+    "gatsby": "1.9.198",
+    "gatsby-plugin-offline": "1.0.14",
+    "gatsby-plugin-sitemap": "1.2.13",
+    "google-map-react": "^0.31.0",
+    "react-helmet": "^5.2.0"
+  }
+}
